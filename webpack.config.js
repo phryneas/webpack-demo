@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 module.exports = {
   output: {
@@ -36,6 +37,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new WebpackBuildNotifierPlugin()
   ]
 };
