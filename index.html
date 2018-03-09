@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./node_modules/animate.css/animate.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+
+    <main role="main" class="container" style="padding-top:60px">
+
+      <div class="starter-template">
+        <h1>this page needs some optimization</h1>
+        <p class="lead">
+            stuff &amp; things
+        </p>
+        <br/>
+        <br/>
+        <button id="btn1">1000000000</button>
+        <button id="btn2">bounce!</button>
+      </div>
+
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/mathjs/dist/math.js"></script>
+    <script>
+        document.getElementById('btn1').onclick = e => e.target.textContent = math.sqrt(parseFloat(e.target.textContent));
+        document.getElementById('btn2').onclick = e => e.target.className = "animated infinite bounce";
+    </script>
+  </body>
+</html>
