@@ -1,4 +1,7 @@
 module.exports = {
+  output: {
+    publicPath: "dist/"
+  },
   module: {
     rules: [
       {
