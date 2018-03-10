@@ -3,7 +3,7 @@ const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 module.exports = {
   output: {
-    publicPath: "dist/"
+    publicPath: "/dist/"
   }, 
   devtool: 'source-map',  
   module: {
@@ -30,6 +30,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
+      },
+      {
+        test: /.(woff2?|ttf|eot)$/,
+        use: "file-loader"
       }
     ]
   },
