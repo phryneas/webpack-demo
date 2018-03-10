@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "roboto-npm-webfont/full/style.css";
+import "./background.css";
 
 document.getElementById("btn1").onclick = e =>
   require.ensure(["mathjs"], () => {
