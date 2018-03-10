@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.css";
+import "./override-bootstrap.scss";
 import "roboto-npm-webfont/full/style.css";
 import "./background.css";
 
